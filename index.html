@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yuxin Lin</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: white;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #0068a9;
+        }
+
+        a:hover {
+            color: #c44b20;
+        }
+
+        /* Header */
+
+        header {
+            border-bottom: 1px solid #ddd;
+            background: white;
+        }
+
+        .header-container {
+            max-width: 1050px;
+            margin: auto;
+            padding: 22px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-name {
+            font-size: 29px;
+            font-weight: 600;
+        }
+
+        .site-name a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #c44b20;
+        }
+
+        /* Main page */
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 30px 80px;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 500;
+            margin: 0 0 30px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 500;
+            margin-top: 55px;
+            margin-bottom: 20px;
+
+            border-bottom: 2px solid #d14900;
+            padding-bottom: 7px;
+        }
+
+        h3 {
+            font-size: 21px;
+            margin-top: 35px;
+        }
+
+        p,
+        li {
+            font-size: 16.5px;
+        }
+
+        /* Intro */
+
+        .profile {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .profile img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .bio p:first-child {
+            margin-top: 0;
+        }
+
+        /* Lists */
+
+        .research-list li {
+            margin-bottom: 18px;
+        }
+
+        .publications li {
+            margin-bottom: 17px;
+            padding-left: 5px;
+        }
+
+        .paper-title {
+            font-weight: 500;
+        }
+
+        .journal {
+            font-style: italic;
+        }
+
+        .teaching-item {
+            margin-bottom: 24px;
+        }
+
+        /* Contact */
+
+        .contact {
+            margin-top: 55px;
+            background: #f4f4f4;
+            border-left: 4px solid #d14900;
+            padding: 22px 28px;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #222;
+            color: #ddd;
+        }
+
+        .footer-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 750px) {
+
+            .header-container {
+                display: block;
+            }
+
+            nav {
+                margin-top: 12px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 18px;
+            }
+
+            main {
+                padding: 35px 20px 60px;
+            }
+
+            .profile {
+                grid-template-columns: 1fr;
+            }
+
+            .profile img {
+                max-width: 320px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="header-container">
+
+        <div class="site-name">
+            <a href="#">Yuxin Lin</a>
+        </div>
+
+        <nav>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+
+<main>
+
+    <h1>Yuxin Lin</h1>
+
+
+    <!-- =========================
+         INTRODUCTION
+    ========================= -->
+
+    <section class="profile">
+
+        <div>
+
+            <img
+                src="https://caltechsites-prod-assets.resources.caltech.edu/yuxinlin/images/1725735663464.2e16d0ba.fill-890x500-c100.jpg"
+                alt="Yuxin Lin"
+            >
+
+        </div>
+
+
+        <div class="bio">
+
+            <p>
+                I completed my Ph.D. in Mathematics at Caltech,
+                working under Elena Mantovan. I will be an incoming
+                postdoc at the University of Michigan.
+            </p>
+
+            <p>
+                I am interested in number theory and algebraic geometry,
+                especially p-divisible groups associated to abelian varieties.
+            </p>
+
+            <p>
+                I did my undergraduate studies at the University of Notre Dame.
+            </p>
+
+            <p>
+                I can speak Mandarin, English, Japanese, Cantonese and Teochew.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESEARCH
+    ========================= -->
+
+    <section id="research">
+
+        <h2>Research</h2>
+
+        <p>
+            I have conducted research in:
+        </p>
+
+        <ol class="research-list">
+
+            <li>
+                <strong>Arithmetic Geometry:</strong>
+                I have done projects studying the stratification of
+                moduli spaces of curves by discrete invariants.
+                I am currently doing a project on the structure of
+                the ring of automorphic forms on certain Shimura varieties.
+            </li>
+
+            <li>
+                <strong>Algebraic Geometry / Coding Theory:</strong>
+                I have worked on a project to compute the generalized
+                Hamming weights of projective Reed-Muller codes using
+                techniques in algebraic geometry.
+            </li>
+
+            <li>
+                <strong>Discrete Math:</strong>
+                I have done some projects on statistical questions in
+                number rings, numerical semigroups and their higher
+                dimensional counterparts.
+            </li>
+
+        </ol>
+
+    </section>
+
+
+
+    <!-- =========================
+         PUBLICATIONS
+    ========================= -->
+
+    <section id="publications">
+
+        <h2>Publications</h2>
+
+        <p>
+            Here is a list of my published papers:
+        </p>
+
+        <ol class="publications">
+
+            <li>
+                <span class="paper-title">
+                    The p-rank stratification of the moduli space of
+                    double covers of a fixed elliptic curve
+                </span>
+                (with K. Chang, D. Dragutinovic, S. Groen, D. Singhal).
+                <span class="journal">
+                    Nagoya Mathematical Journal.
+                </span>
+
+                <a
+                    href="https://doi.org/10.1017/nmj.2026.10107"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    DOI
+                </a>
+            </li>
+
+
+            <li>
+                <span class="paper-title">
+                    On a Conjecture of Beelen, Datta and Ghorpade
+                    for the Number of Points of Varieties over Finite Fields
+                </span>
+                (with D. Singhal).
+                (2025)
+                <span class="journal">
+                    European Journal of Mathematics.
+                </span>
+
+                <a
+                    href="https://doi.org/10.1007/s40879-025-00844-7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    DOI
+                </a>
+            </li>
+
+
+            <li>
+                <span class="paper-title">
+                    Abelian covers of P<sup>1</sup> of
+                    p-ordinary Ekedahl-Oort type
+                </span>
+                (with E. Mantovan, D. Singhal).
+                (2024)
+                <span class="journal">
+                    International Mathematics Research Notices.
+                </span>
+
+                <a
+                    href="https://doi.org/10.1093/imrn/rnae241"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    DOI
+                </a>
+            </li>
+
+
+            <li>
+                <span class="paper-title">
+                    Density questions in rings of the form
+                    O<sub>K</sub>[γ] ∩ K
+                </span>
+                (with D. Singhal).
+                (2023)
+                <span class="journal">
+                    International Journal of Number Theory.
+                </span>
+
+                <a
+                    href="https://doi.org/10.1142/S1793042124500581"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    DOI
+                </a>
+            </li>
+
+
+            <li>
+                <span class="paper-title">
+                    Primes in denominators of Algebraic Numbers
+                </span>
+                (with D. Singhal).
+                (2023)
+                <span class="journal">
+                    International Journal of Number Theory.
+                </span>
+
+                <a
+                    href="https://doi.org/10.1142/S1793042124500167"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    DOI
+                </a>
+            </li>
+
+
+            <li>
+                <span class="paper-title">
+                    Density of Numerical sets associated to a
+                    Numerical semigroup
+                </span>
+                (with D. Singhal).
+                (2021)
+                <span class="journal">
+                    Communications in Algebra,
+                    49:10, 4291-4303.
+                </span>
+
+                <a
+                    href="https://doi.org/10.1080/00927872.2021.1918136"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    DOI
+                </a>
+            </li>
+
+
+            <li>
+                <span class="paper-title">
+                    Frobenius allowable gaps of Generalized
+                    Numerical Semigroups
+                </span>
+                (with D. Singhal).
+                (2022)
+                <span class="journal">
+                    Electronic Journal of Combinatorics,
+                    Volume 29, Issue 4.
+                </span>
+
+                <a
+                    href="https://doi.org/10.37236/10748"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    DOI
+                </a>
+            </li>
+
+
+            <li>
+                <span class="paper-title">
+                    The Limiting Spectral Measure for an Ensemble
+                    of Generalized Checkerboard Matrices
+                </span>
+                (with F. Chen, S. J. Miller, J. Yu).
+                (2021)
+                <span class="journal">
+                    The PUMP Journal of Undergraduate Research,
+                    4, 202-221.
+                </span>
+
+                <a
+                    href="https://journals.calstate.edu/pump/article/view/2544"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Article
+                </a>
+            </li>
+
+        </ol>
+
+
+
+        <!-- =========================
+             PREPRINTS
+        ========================= -->
+
+        <h3>Preprints under review</h3>
+
+        <ol class="publications">
+
+            <li>
+
+                <span class="paper-title">
+                    Non-μ-ordinary Newton polygons in the Torelli Locus
+                </span>
+
+                (with D. Singhal and E. Mantovan).
+
+                <a
+                    href="https://arxiv.org/abs/2406.09632"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    arXiv
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <span class="paper-title">
+                    Largest zero-dimensional intersection of
+                    r degree d hypersurfaces
+                </span>
+
+                (with D. Singhal).
+
+                <a
+                    href="https://arxiv.org/abs/2507.05732"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    arXiv
+                </a>
+
+            </li>
+
+        </ol>
+
+    </section>
+
+
+
+    <!-- =========================
+         TEACHING
+    ========================= -->
+
+    <section id="teaching">
+
+        <h2>Teaching</h2>
+
+
+        <div class="teaching-item">
+
+            <strong>
+                Instructor – Math 1d: Calculus Series and
+                Math 8: Problem Solving in Calculus
+            </strong>
+
+            <p>
+                Designed and delivered lectures, developed course
+                syllabi and materials, and supported students
+                through office hours.
+            </p>
+
+        </div>
+
+
+        <div class="teaching-item">
+
+            <strong>
+                Teaching Assistant – Graduate courses
+                (Algebraic Topology, Abstract Algebra) and
+                undergraduate calculus &amp; linear algebra
+            </strong>
+
+            <p>
+                Led recitation sessions, graded assignments,
+                and prepared students for qualifying exams.
+            </p>
+
+        </div>
+
+
+        <div class="teaching-item">
+
+            <strong>Mentoring &amp; Outreach</strong>
+
+            <ul>
+
+                <li>
+                    Problem Session Leader at Preliminary
+                    Arizona Winter School (2023).
+                </li>
+
+                <li>
+                    Math Help Room and Math Bunker Tutor,
+                    University of Notre Dame (2019–2020).
+                </li>
+
+                <li>
+                    Group activity leader at fifth year classroom
+                    at High Point Academy (2026).
+                </li>
+
+                <li>
+                    Volunteer at Women in STEM Science Day
+                    at Caltech (2026).
+                </li>
+
+                <li>
+                    Member of PMA Graduate Student Advisory Board,
+                    Caltech (2025–2026).
+                </li>
+
+                <li>
+                    Co-organizer (with Elizabeth Xiao) of weekly
+                    math department game night (2025–2026).
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section id="contact" class="contact">
+
+        <strong>Contact</strong>
+
+        <p>
+            Email:
+            <a href="mailto:yuxinlin@caltech.edu">
+                yuxinlin@caltech.edu
+            </a>
+        </p>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-container">
+        Yuxin Lin
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
